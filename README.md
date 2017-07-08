@@ -1,2 +1,4 @@
 # Web-Stuff
-Web Stuff is a repo for site templates
+Repo for....
+(a) Simple Templates 
+(b) Stupid Ideas
