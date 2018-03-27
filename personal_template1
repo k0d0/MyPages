@@ -1,0 +1,255 @@
+<!-- Using W3 for front-end framework and Font Awesome -->
+<!DOCTYPE html>
+<html>
+        <title>Template 1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+        body, html {
+            height: 100%;
+            color: black;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Parallax Logo */
+	/*http://www.nationalparksandmore.com/wp-content/uploads/2014/03/antelope-005.jpg*/
+        .bgimg-1 {
+            background-image: url('https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2018/02/sea-of-thieves-kraken-battle.jpg?itok=TxF8l4-R');
+            min-height: 100%;
+        }
+
+        .w3-wide {letter-spacing: 10px;}
+        .w3-hover-opacity {cursor: pointer;}
+        .w3-bar-item {color: black;}
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1024px) {
+            .bgimg-1 {
+                background-attachment: scroll;
+            }
+        }
+
+        p.created {color:white;}
+
+    </style>
+
+    <body>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-light-gray w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+
+                <a href="#nav1" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About Me</a>
+                <a href="#nav2" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NAV 2</a>
+                <a href="#nav3" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> NAV 3</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope"></i> CONTACT</a>
+                <a href="#map" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-map"></i>MAP</a>
+            </div>
+        </div>
+
+        <!-- Navbar for small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <a href="#nav1" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT ME</a>
+            <a href="#nav2" class="w3-bar-item w3-button" onclick="toggleFunction()">NAV 2</a>
+            <a href="#nav3" class="w3-bar-item w3-button" onclick="toggleFunction()">NAV 3</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-right" onclick="toggleFunction()"><i class="fa fa-envelope">CONTACT</i></a>
+            <a href="#map" class="w3-bar-item w3-button w3-right" onclick="toggleFunction()">MAP</a>    
+        </div>
+
+        <!-- First Parallax Image with Logo -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home"></div>
+
+        <div class="w3-display-middle" style="white-space:nowrap;">
+
+            <!-- Timer Header -->            
+		<center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">COUNTDOWN TILL MY B-DAY :)</span></center>
+	    
+            
+	    <!-- Timer -->
+            	<p class="w3-center w3-padding-small w3-black w3-large w3-wide w3-animate-opacity" id="timer"></p>
+
+	    <!--Spacer-->
+	    <p>&nbsp;&nbsp;</p>
+
+	
+            <!-- Header -->
+            	<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">THIS IS A PERSONALIZED TEMPLATE</span>
+        </div>
+
+        <!-- Container (ABOUT ME) -->
+        <div class="w3-content w3-container w3-padding-32" id="nav1">
+            <h3 class="w3-center">About Me</h3>
+            <p class="w3-center"><em> Kyle Jencks - Security Assessor at SAIC</em></p>
+		<center>
+	    		<img src="https://media.licdn.com/dms/image/C5603AQE2ruCmJRf15Q/profile-displayphoto-shrink_200_200/0?e=1527368400&v=alpha&t=YeHzRZKYVThoQ84bvv8FYd9Uxi7Wjf4RYcBijTwjDSM" alt="userimg" class="w3-circle">
+		</center>
+	    <p class="w3-center w3-padding-16">
+		I am a graduate of University of Central Oklahoma in the field of Computer Science and Information Sciences, and also hold an Associates in Computer Information Systems. I have worked in the information technology field 	
+
+		during almost all years of my schooling, and feel that computers have been a big part of my life whether it be personal, work, or my schooling. I am very interested in all things technology and have a strong desire to 	
+
+		learn and acquire a greater, and broadened sill set that i can use for work and my everyday life. My goals as computer professional are to utilize my relevant experience, technical expertise and problem solving skills to 	
+
+		learn more and grow in the ever changing fields of computers and technology.
+            </p>
+        </div>
+
+        <!-- Container (My Portfolio) -->
+        <div class="w3-content w3-container w3-padding-32" id="nav2">
+            <h3 class="w3-center">My Portfolio</h3>
+            <div>
+	     	<p class="w3-center">Here is a project i worked on for my capstone at the University of Central Oklahoma! This is a 2D Java based game partially utilizing the basics of Object Oriented deisgn principals and patterns.</p>
+	     	<p class="w3-center">The project consisted of 6 members and followed the Agile Design Method over the 4 months given for the project!</p>
+
+			<div class="w3-center"><iframe width="550" height="500" src="https://www.youtube.com/watch?v=F3dDj--TECg"></iframe></div>
+
+	     	<p class="w3-center">Another project we worked on was developing an app for the android platform again following the Agile Design Method over another 3 months.</p>
+	     	<p class="w3-center">This time we had groups of 4 and we decided to created an app for the super pokemon trainer!</p>
+
+			<div class="w3-center"><iframe width="550" height="500" src="https://youtu.be/MKVc-9ftGN0"></iframe></div>
+
+	    </div>
+	    <p class="w3-center">Here is a link to my personal project repositories on <a href="https://github.com/k0d0" target="_blank" class="w3-hover-text-opacity">GitHub</a> and some other projects I've worked on!</p
+        </div>
+
+        <!-- Container (NAV 3) -->
+        <div class="w3-content w3-container w3-padding-32" id="nav3">
+            <h3 class="w3-center">Google Maps</h3>
+            <p class="w3-center"><em>Heres some lorem ipsum and a random google maps to the statue of liberty</em></p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 	
+
+		non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 	
+
+		aliquip ex ea commodo consequat.
+            </p>
+        </div>
+
+        <div>
+
+            <!-- Map -->
+            <!-- Embeded Google Maps -->
+            <div class="w3-center w3-container w3-padding-16" id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d378.16329831063894!2d-74.0445004!3d40.6892494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25090129c363d%3A0x40c6a5770d25022b!2sStatue+of+Liberty+National		
+
+		+Monument!5e0!3m2!1sen!2sus!4v1522185831383" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+
+            <!-- Container (Contact Section) -->
+            <div class="w3-content w3-container w3-padding-64" id="contact">
+                <div class="w3-panel">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker w3-xlarge w3-margin-right"></i> Oklahoma, US<br>
+                        <i class="fa fa-map-marker w3-xlarge w3-margin-right"></i> Text or Call: ###-###-####<br>
+                        <i class="fa fa-envelope w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+                    </div>
+
+                    <form action="mailto:mail@mail.com" method="post">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                        <button class="w3-button w3-black w3-right w3-section" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer class="w3-center w3-black w3-padding-64">
+            <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+            <div class="w3-xlarge w3-section">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+            </div>
+            <p class="created">Created By: <a href="https://www.linkedin.com/in/kyle-jencks-1b802310a/" target="_blank" class="w3-hover-text-opacity">Kyle Jencks</a></p>
+        </footer>
+
+        <script>
+            // Change style of navbar on scroll
+            window.onscroll = function() {myFunction()};
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+                }
+            }
+
+            /*
+                Creates a menu bar for small screens
+            */
+
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            /*
+                Script for "timer"
+            */
+
+            // Set the date we're counting down to
+            var countDownDate = new Date("February 23, 2019 12:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="timer"
+                document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("timer").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>     
+    </body>
+</html>
