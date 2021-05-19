@@ -62,10 +62,16 @@
 
     <div class="w3-container">
     <img src="maxresdefault.jpg" alt="Trulli" width="250" height="200">
-    <audio id="player" controls autoplay>
+    <audio id="player" controls autoplay id="myaudio">
  	<source src="letsgo.mp3" type="audio/mpeg">
 	Your browser does not support the audio element.
 	</audio>
+	    <--Volume Script-->
+	<script>
+	var audio = document.getElementById("myaudio");
+	audio.volume = 0.5;
+	</script>
+	    
       <h3 class="w3-padding-64">
         <b>Mythic<br>
           Plus<br>
